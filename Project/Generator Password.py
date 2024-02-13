@@ -29,12 +29,3 @@ while True:
 
     password = ''.join(random.choice(characters) for i in range(length))
     print("รหัสผ่านของคุณคือ:", password)
-    
-    while True:
-        again = input("ต้องการสร้างรหัสผ่านอีกครั้งหรือไม่? (ใช่/ไม่): ")
-        if again == 'ใช่':
-            break
-        elif again == 'ไม่':
-            quit()
-        else:
-            print("กรุณาป้อน ใช่/ไม่ เท่านั้น")
