@@ -7,7 +7,9 @@ while True:
     print("2. ปานกลาง")
     print("3. ยาก")
     difficulty = input("เลือกระดับความยาก (1, 2, 3): ")
-    if difficulty not in ['1', '2', '3']:
+    
+    diff = ['1', '2', '3']
+    if difficulty not in diff:
         print("กรุณาเลือกระดับความยากให้ถูกต้อง")
         continue
     
