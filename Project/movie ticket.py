@@ -18,7 +18,7 @@ while True:
         else:
             result_money = money - ticket_prices
             print(f"You have selected '{selected_movie}'. The ticket price is {result_money} Baht.")
-    if selected_movie == '2':
+    elif selected_movie == '2':
         if money > ticket_prices:
             print("คุณมีเงินไม่เพียงพอ")
             break
