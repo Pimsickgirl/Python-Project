@@ -1,4 +1,4 @@
-movies = ["", "Movie B", "Movie C"]
+movies = ["Jurassic Park III", "Jirassic Park", "Jurassic World"]
 ticket_prices = [100, 120, 90]
 
 while True:
@@ -24,6 +24,7 @@ while True:
             break
         else:
             result_money = money - ticket_prices
+            print(f"You have selected '{selected_movie}'. The ticket price is {result_money} Baht.")
     else:
         print("Invalid movie selection.")
         continue
