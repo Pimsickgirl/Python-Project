@@ -16,22 +16,22 @@ while True:
             print("คุณมีเงินไม่เพียงพอ")
             break
         else:
-            result_money = money - ticket_prices
-            print(f"You have selected '{selected_movie}'. The ticket price is {result_money} Baht.")
+            result_money = money - ticket_prices[0]
+            print(f"You have selected '{selected_movie[0]}'. The ticket price is {result_money} Baht.")
     elif selected_movie == '2':
-        if money < ticket_prices[2]:
+        if money < ticket_prices[1]:
             print("คุณมีเงินไม่เพียงพอ")
             break
         else:
-            result_money = money - ticket_prices
-            print(f"You have selected '{selected_movie}'. The ticket price is {result_money} Baht.")
+            result_money = money - ticket_prices[1]
+            print(f"You have selected '{selected_movie[1]}'. The ticket price is {result_money} Baht.")
     elif selected_movie == '3':
         if money < ticket_prices[3]:
             print("คุณมีเงินไม่เพียงพอ")
             break
         else:
-            result_money = money - ticket_prices
-            print(f"You have selected {selected_movie} The ticket price is {result_money} Baht")
+            result_money = money - ticket_prices[2]
+            print(f"You have selected {selected_movie[2]} The ticket price is {result_money} Baht")
     else:
         print("Invalid movie selection.")
         continue
