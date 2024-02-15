@@ -12,24 +12,36 @@ while True:
     money = int(input("Enter money do you have: "))
 
     if selected_movie == '1':
-        if money > ticket_price:
+        if money < ticket_price[0]:
             print("คุณมีเงินไม่เพียงพอ")
             break
         else:
             result_money = money - ticket_prices
             print(f"You have selected '{selected_movie}'. The ticket price is {result_money} Baht.")
     elif selected_movie == '2':
-        if money > ticket_prices:
+        if money < ticket_prices[2]:
             print("คุณมีเงินไม่เพียงพอ")
             break
         else:
             result_money = money - ticket_prices
             print(f"You have selected '{selected_movie}'. The ticket price is {result_money} Baht.")
+    elif selected_movie == '3':
+        if money < ticket_prices[3]:
+            print("คุณมีเงินไม่เพียงพอ")
+            break
+        else:
+            result_money = money - ticket_prices
+            print(f"You have selected {selected_movie} The ticket price is {result_money} Baht")
     else:
         print("Invalid movie selection.")
         continue
 
-    buy_again = input("Do you want to buy another ticket? (yes/no): ")
-    if buy_again.lower() != 'yes':
-        print("Thank you for using Movie Ticket Booking System!")
-        break
+    while True:
+        buy_again = input("Do you want to buy another ticket? (yes/no): ")
+        if buy_again.lower() == 'y':
+            break
+        elif buy_again.lower() == 'n':
+            print("Thank you for using buy ticket systems 🙏🏻")
+            quit()
+        else:
+            print("กรุณาป้อน (y/n) เท่านั้น")
